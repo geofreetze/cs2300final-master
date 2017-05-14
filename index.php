@@ -37,6 +37,7 @@
         
         <script src = "./js/jquery-3.2.1.min.js"></script>
         <script src = "./js/script.js"></script>
+        <script src = "./js/bday.js"></script>
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBkvbJdQpUUjHwqyFeyvaSEP9lvuKDKfU&callback=initMap">
         </script>
