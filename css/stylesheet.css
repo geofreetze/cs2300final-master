@@ -1,0 +1,397 @@
+body{
+    overflow-x: hidden;
+    word-wrap: break-word;
+}
+.row-centered{
+    text-align: center;
+}
+.col-centered{
+    display: inline-block;
+    float: none;
+}
+/*Collapsing sidebar*/
+.sidenav{
+    height: 100%;
+    width: 15vw;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #9D2F10;
+    overflow-x: hidden;
+    transition: height 0.5s linear;
+    text-align: center;
+}
+.sidenav a, .topnav a{
+    padding: 3px 10px 3px 10px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 26px;
+    line-height: 1.15;
+    color: white;
+}
+.sidenav a:hover{
+    text-decoration: underline;
+}
+.sidenav .icon{
+    display: none;
+}
+.logo-image{
+    margin: 0;
+    padding: 10px;
+    height: 15vw;
+}
+a.logo-image-container{
+    padding: 0;
+}
+.topnav{
+    position: fixed;
+    display: none;
+}
+.social-links{
+    position: relative;
+    color: white;
+}
+.social-links a{
+    display: inline;
+    font-size: 20px;
+}
+.social-links a:hover{
+    color: #e67e22
+}
+@media screen and (max-width: 768px){
+    .sidenav{
+        left: -40vw;
+        width: 40vw;
+    }
+    .logo-image{
+        width: 40vw;
+        height: 40vw;
+    }
+    .topnav{
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: #9D2F10;
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    .sidenav a{
+        font-size: 22px !important;
+    }
+
+    .topnav .icon{
+        display: block;
+        position: absolute;
+        padding: 0;
+        cursor: pointer;
+        top: 0;
+        left: 5px;
+        z-index: 2;
+        font-size: 24px;
+        text-align: center;
+    }
+    .sidenav .icon{
+        display: block;
+        position: absolute;
+        padding: 2px;
+        cursor: pointer;
+        top: 0;
+        right: 5px;
+        z-index: 3;
+    }
+    .content{
+        position: relative;
+        margin-left: 0px !important;
+        z-index: -1;
+    }
+
+    .jumbotron{
+        height: 60vh !important;
+    }
+    .jumbotron-text{
+        font-size: 16px !important;
+    }
+
+}
+.content{
+    position: relative;
+    margin-left: 15vw;
+    padding: 0;
+    z-index: -1;
+}
+.row{
+    margin: 0;
+}
+/* Jumbotron */
+.jumbotron{
+    background-image: url(../img/bricklogo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+.section-wrapper{
+    padding: 0;
+}
+.jumbotron-text{
+    position: absolute;
+    bottom: 3vh;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.15;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    background-color: #f59608;
+    padding: 7px 5px;
+    border-radius: 5px;
+}
+#top > div > h1{
+    display: none !important;
+}
+/*Sections*/
+.section-header{
+    height: 150px;
+    background-color: #000000;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.section-title{
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Open Sans Condensed", sans-serif;
+    color: white;
+    padding: 15px;
+    border: 5px solid white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+/*Section Images*/
+.section-header#whiskeys{
+    background-image: url(../img/sections/woodstrip.jpg);
+}
+.section-header#story{
+    background-image: url(../img/sections/story.jpg);
+}
+.section-header#smedia{
+    background-image: url(../img/sections/social.jpg);
+}
+.section-header#maps{
+    background-image: url(../img/sections/maps.jpg);
+}
+
+@media screen and (max-width: 768px){
+
+    .section-header{
+        height: 100px;
+    }
+    .section-title{
+        border: 3px solid white;
+        font-size: 28px;
+    }
+}
+
+/*Product Section*/
+#products{
+    background-color: black;
+    color: white;
+}
+div.product-container{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-image{
+    height: 48vh;
+}
+.product-wrapper{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product-header{
+    font-family: "Crimson Text", serif;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.15;
+}
+.product-title{
+    font-size: 36px;
+    margin: 0;
+    padding: 0 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+.product-description{
+    font-size: 20px;
+    margin: 0;
+    padding: 0 30px;
+    font-family: "Crimson Text", serif;
+    line-height: 1.25;
+}
+
+@media screen and (max-width: 768px){
+    .product-header{
+        font-size: 26px;
+    }
+}
+
+/* About Section */
+
+.borderless-img{
+    display: block;
+    margin: 0 auto;
+}
+
+#about{
+    background-color: black;
+    color: white;
+}
+
+.about-title{
+    font-size: 48px;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    padding: 0 2vw;
+    line-height: 1.15;
+}
+.about-subtitle{
+    font-size: 24px;
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    line-height: 1.15;
+    padding: 0 7vw;
+}
+.align-left > h1, .align-left > h2{
+    text-align: left;
+    padding: 0 1vw;
+}
+.about-img, .about-logo{
+    width: 30vw;
+    display: block;
+    margin: 0 auto;
+}
+.about-img{
+    border: 10px solid white;
+    border-radius: 5px;
+}
+.about-person{
+    width: 20vw;
+    display: block;
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px){
+    .about-title, .about-subtitle{
+        text-align: center;
+        padding: 0 5px !important;
+    }
+    .about-title{
+        font-size: 26px;
+    }
+    .about-subtitle{
+        font-size: 18px;
+    }
+    .about-img, .about-logo{
+        width: 80vw;
+    }
+    .about-img{
+        border: 5px solid white;
+    }
+    .about-person{
+        width: 250px;
+    }
+    .person-name{
+        font-size: 22px !important;
+    }
+    .person-info{
+        font-size: 18px !important;
+    }
+}
+#otwlogo{
+    height: 250px;
+    padding: 10px;
+}
+.person-name{
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    line-height: 1.15
+}
+p.person-info{
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.15;
+}
+
+/* Social Media Section */
+#social{
+    background-color: black;
+    color: white;
+}
+
+.instagram-container{
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.social-title{
+    font-family: "Open Sans Condensed", sans-serif;
+    text-transform: uppercase;
+    line-height: 1.15;
+
+}
+.social-content{
+    padding: 10px 0 10px 0;
+}
+
+/* Admin Website */
+.admin-header {
+    margin-left: 13%;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.admin-header:hover {
+    border-bottom: solid white 2px;
+}
+
+/***** styling for the nav bar *****/
+.nav {
+    background-color: #9D2F10;
+    width: 100%;
+    margin-left: 5%;
+    padding: 0;
+    line-height: 350%;
+}
